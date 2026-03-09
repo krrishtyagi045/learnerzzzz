@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Learnerzz - Smart Learning Bot</title>
+
+<style>
+
+body{
+margin:0;
+font-family: 'Segoe UI', sans-serif;
+background:#f4f7ff;
+color:#333;
+}
+
+/* Header */
+
+header{
+background:#1f3c88;
+color:white;
+padding:20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:32px;
+}
+
+/* Navigation */
+
+nav{
+background:#162a63;
+text-align:center;
+padding:12px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Hero Section */
+
+.hero{
+padding:80px 20px;
+text-align:center;
+background:linear-gradient(135deg,#4e73ff,#6f8dff);
+color:white;
+}
+
+.hero h2{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero p{
+font-size:18px;
+margin-bottom:20px;
+}
+
+.hero button{
+padding:12px 25px;
+border:none;
+border-radius:6px;
+background:white;
+color:#4e73ff;
+font-size:16px;
+cursor:pointer;
+}
+
+/* Features */
+
+.features{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+padding:50px;
+}
+
+.card{
+background:white;
+padding:25px;
+width:250px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card h3{
+color:#4e73ff;
+}
+
+/* About */
+
+.about{
+padding:50px;
+text-align:center;
+background:#eef2ff;
+}
+
+.about h2{
+margin-bottom:10px;
+}
+
+/* Footer */
+
+footer{
+background:#1f3c88;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>📚 Learnerzz</h1>
+<p>Your AI Powered Learning Assistant</p>
+</header>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Features</a>
+<a href="#">About</a>
+<a href="#">Contact</a>
+</nav>
+
+<section class="hero">
+
+<h2>Learn Smarter with AI</h2>
+<p>Ask questions, clear doubts, and study faster with the Learnerzz educational bot.</p>
+
+<button>Start Chatting</button>
+
+</section>
+
+<section class="features">
+
+<div class="card">
+<h3>🤖 AI Chatbot</h3>
+<p>Get instant answers to your academic questions.</p>
+</div>
+
+<div class="card">
+<h3>📖 Study Help</h3>
+<p>Find explanations, notes, and learning resources.</p>
+</div>
+
+<div class="card">
+<h3>🎯 Exam Preparation</h3>
+<p>Prepare smarter with quick concept explanations.</p>
+</div>
+
+</section>
+
+<section class="about">
+
+<h2>About Learnerzz</h2>
+
+<p>
+Learnerzz is an educational AI assistant designed to help students understand concepts,
+solve doubts, and improve their learning experience using artificial intelligence.
+</p>
+
+</section>
+
+<footer>
+
+<p>© 2026 Learnerzz | Powered by IBM Watson Assistant</p>
+
+</footer>
+
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "64bd6b24-b00a-4a21-9405-5ffa1035bacb", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "31c1455a-4b7b-4a34-a597-439d06bc532b", // The ID of your service instance.
+    onLoad: async (instance) => { await instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+</body>
+</html>
